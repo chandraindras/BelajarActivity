@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/make_selection_sms_box"
+            android:background="#f2f2f2"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/task_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Bangun Tidur"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/task_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/task_title"
+                android:text="Pukul 04.30 WIB"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:layout_marginLeft="16dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_height="40dp"
+                android:layout_width="40dp" />
+    </RelativeLayout>
+</LinearLayout>

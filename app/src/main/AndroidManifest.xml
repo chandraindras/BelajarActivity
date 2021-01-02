@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="pens.lab.app.belajaractivity">
+    package="pens.lab.app.todolistmvp">
 
     <application
         android:allowBackup="true"
@@ -8,14 +8,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/TemaBaru">
-        <activity android:name=".SecondActivity"></activity>
-        <activity android:name=".FirstActivity"></activity>
-        <activity android:name=".modul.profile.ProfileActivity"></activity>
+        android:theme="@style/AppTheme">
+        <activity android:name=".modul.succes_edit_task.SuccesEditTaskActivity"></activity>
+        <activity android:name=".modul.succes_add_task.SuccesAddTaskActivity"></activity>
+        <activity android:name=".modul.forget_password.ForgetPasswordActivity"></activity>
+        <activity android:name=".modul.edit_task.EditTaskActivity"></activity>
+        <activity android:name=".modul.add_task.AddTaskActivity"></activity>
+        <activity android:name=".modul.dashboard.DashboardActivity"></activity>
+        <activity android:name=".modul.sign_up.SignUpActivity"></activity>
         <activity android:name=".modul.login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

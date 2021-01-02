@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,23 +8,16 @@
     android:orientation="vertical"
     android:background="#fff"
     android:padding="20dp"
-    tools:context=".modul.login.LoginActivity">
+    tools:context=".modul.edit_task.EditTaskActivity">
 
     <TextView
         android:id="@+id/logo_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome in ToDo List"
+        android:text="Edit your task here !"
         android:textSize="24sp"
         android:transitionName="logo_text"
         android:textColor="#000"/>
-
-    <TextView
-        android:id="@+id/slogan_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign In to continue"
-        android:textSize="18sp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,12 +29,13 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:startIconDrawable="@drawable/ic_baseline_person_24"
-            android:hint="Username"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">>
+            android:id="@+id/email"
+            android:hint="Subject"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            tools:ignore="MissingClass">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/username"
+                android:id="@+id/edit_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -48,45 +43,32 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:startIconDrawable="@drawable/ic_baseline_https_24"
-            android:hint="Password"
+            android:id="@+id/username"
+            android:hint="Description"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/password"
+                android:id="@+id/edit_des"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                tools:ignore="MissingClass" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/forgetpass"
+            android:id="@+id/save_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="20dp"
             android:background="@color/colorPrimary"
-            android:text="Forget Password?"
-            android:textColor="#fff"/>
-
-        <Button
-            android:id="@+id/signin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:background="@color/colorPrimary"
-            android:text="SIGN IN"
+            android:text="SAVE"
             android:textColor="#fff" />
 
         <Button
-            android:id="@+id/newuser"
+            android:id="@+id/delete"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:background="@color/colorPrimary"
-            android:text="New User? SIGN UP"
+            android:text="DELETE"
             android:textColor="#fff" />
-
     </LinearLayout>
-
 </LinearLayout>
